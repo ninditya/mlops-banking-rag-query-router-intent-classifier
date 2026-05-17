@@ -1,0 +1,45 @@
+# ============================================================
+# Banking Intent Router — Full Requirements
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# --- Core ML ---
+scikit-learn==1.5.1       # LinearSVC, LogisticRegression, CalibratedClassifierCV
+numpy==1.26.4
+pandas==2.2.2
+
+# --- NLP & Embeddings ---
+sentence-transformers==5.5.0   # SBERT encoder (all-MiniLM-L6-v2)
+transformers==5.8.1            # backbone untuk sentence-transformers
+tokenizers==0.22.2
+torch==2.11.0                  # inference engine (MPS/CUDA/CPU)
+huggingface_hub==1.15.0        # download model dari HuggingFace
+
+# --- Dataset ---
+datasets==2.21.0               # load Banking77 dari HuggingFace (trust_remote_code=True)
+
+# --- RAG ---
+faiss-cpu==1.13.2              # vector similarity search untuk knowledge base
+
+# --- Experiment Tracking ---
+mlflow==2.16.2                 # tracking, artifact logging, model registry
+
+# --- Visualization (EDA + Training plots) ---
+matplotlib==3.9.0
+seaborn==0.13.2
+pillow==12.2.0
+
+# --- Serving (FastAPI) ---
+fastapi==0.136.1
+uvicorn[standard]==0.47.0      # ASGI server
+pydantic==2.13.4               # request/response schema
+starlette==1.0.0               # FastAPI dependency
+httpx==0.28.1                  # HTTP client (dipakai sentence-transformers)
+
+# --- Monitoring ---
+prometheus-client==0.25.0      # 12 custom metrics → Grafana
+
+# --- Utilities ---
+requests==2.34.2
+tqdm==4.67.3
+python-dotenv==1.2.2           # load .env file untuk API keys

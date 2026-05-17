@@ -1,0 +1,8 @@
+{
+  "model": "SVM",
+  "C": 5,
+  "test_f1": 0.9305,
+  "test_acc": 0.9285,
+  "cost_savings": 95.96,
+  "encoder": "all-MiniLM-L6-v2"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "SVM",
+  "C": 1,
+  "cv_f1_mean": 0.8771,
+  "cv_f1_std": 0.0026,
+  "test_f1": 0.8843,
+  "test_acc": 0.8838,
+  "cost_savings": 93.1,
+  "template_pct": 84.83,
+  "time_s": 1.4
+}

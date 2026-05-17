@@ -1,0 +1,356 @@
+[
+  {
+    "id": "card_blocked",
+    "question": "My card has been blocked, what should I do?",
+    "answer": "If your card is blocked, you can unblock it instantly through the app: go to Cards → Manage Card → Unblock Card. If you didn't block it yourself, freeze it immediately and contact support — it may have been blocked due to suspicious activity.",
+    "tags": ["card", "blocked", "freeze", "security"]
+  },
+  {
+    "id": "card_lost_stolen",
+    "question": "I lost my card or it was stolen",
+    "answer": "Don't worry — freeze your card immediately in the app under Cards → Freeze Card. We'll block all transactions. You can then report it as lost/stolen and order a replacement card. The replacement arrives in 3–5 business days at no extra charge.",
+    "tags": ["card", "lost", "stolen", "replacement"]
+  },
+  {
+    "id": "card_arrival",
+    "question": "When will my card arrive?",
+    "answer": "Standard cards arrive within 3–7 business days. Express delivery takes 1–2 business days (additional fee applies). Track your card status in the app: Cards → Your Card → Track Delivery. You'll also receive an email notification when it ships.",
+    "tags": ["card", "delivery", "arrival", "shipping"]
+  },
+  {
+    "id": "card_not_working",
+    "question": "My card is not working / payment declined",
+    "answer": "If your card isn't working: (1) Check your balance is sufficient. (2) Ensure the card is not frozen or expired. (3) For online payments, check if 3D Secure is enabled in the app. (4) Some merchants don't accept virtual cards — try a physical card. (5) If the issue persists, contact support with the error code.",
+    "tags": ["card", "declined", "not working", "payment"]
+  },
+  {
+    "id": "card_contactless",
+    "question": "Contactless payment is not working",
+    "answer": "To enable contactless payments: go to Cards → Manage Card → Enable Contactless. Make sure NFC is enabled on your phone for mobile payments. Note: contactless payments are limited to $100 per transaction by default — increase this in Card Settings → Contactless Limit.",
+    "tags": ["contactless", "nfc", "tap", "payment"]
+  },
+  {
+    "id": "exchange_rate",
+    "question": "What is the exchange rate? How does currency conversion work?",
+    "answer": "We use the real-time interbank exchange rate with no hidden markup. Rates are updated every 30 seconds and displayed in the app before you confirm any transaction. For international transfers and card payments abroad, the rate shown at the time of transaction is what you pay. You can check current rates in the app under Payments → Exchange Rates.",
+    "tags": ["exchange rate", "currency", "conversion", "international"]
+  },
+  {
+    "id": "exchange_charge",
+    "question": "Why was I charged an exchange fee?",
+    "answer": "Exchange fees apply when you spend in a currency different from your account currency. Our standard rate is 0.5% on weekdays and 1% on weekends (when interbank markets are closed). To avoid fees, hold the currency you plan to spend in your multi-currency wallet.",
+    "tags": ["exchange", "fee", "charge", "currency", "weekend"]
+  },
+  {
+    "id": "top_up_card",
+    "question": "How do I top up my account by card?",
+    "answer": "To top up by debit/credit card: go to Add Money → Add by Card → enter the amount → confirm. Top-ups by card may incur a small fee depending on your plan. The funds appear instantly or within 1 hour. Note: credit card top-ups may be treated as a cash advance by your bank.",
+    "tags": ["top up", "add money", "card", "deposit"]
+  },
+  {
+    "id": "top_up_bank",
+    "question": "How do I top up my account by bank transfer?",
+    "answer": "To top up by bank transfer: go to Add Money → Bank Transfer. Use the account details shown (sort code + account number or IBAN). Bank transfers typically arrive within 1 business day. There's no fee for bank transfer top-ups. Use the reference number shown to ensure your transfer is matched correctly.",
+    "tags": ["top up", "bank transfer", "IBAN", "deposit"]
+  },
+  {
+    "id": "top_up_failed",
+    "question": "My top up failed or is pending",
+    "answer": "If your top-up failed: (1) Check that your card has sufficient funds. (2) Your bank may have declined the transaction for security — check with them. (3) If pending for more than 2 hours for card top-ups or 3 business days for bank transfers, contact support with the transaction reference number.",
+    "tags": ["top up", "failed", "pending", "declined"]
+  },
+  {
+    "id": "transfer_failed",
+    "question": "My transfer failed or was declined",
+    "answer": "Transfers can fail due to: (1) Incorrect recipient details — double-check the IBAN/account number. (2) Insufficient funds including transfer fees. (3) Recipient bank rejected the transfer. (4) Security limits exceeded. Failed transfers are refunded within 1–3 business days. Contact support with the transfer reference for faster resolution.",
+    "tags": ["transfer", "failed", "declined", "refund"]
+  },
+  {
+    "id": "transfer_pending",
+    "question": "My transfer is still pending, when will it arrive?",
+    "answer": "Transfer timing: Domestic transfers arrive same day or next business day. SEPA transfers (Europe) take 1 business day. International SWIFT transfers take 2–5 business days. Transfers initiated after 3pm or on weekends process the next business day. Check transfer status in Payments → Transfers → [transfer name].",
+    "tags": ["transfer", "pending", "timing", "when", "international"]
+  },
+  {
+    "id": "transfer_cancel",
+    "question": "Can I cancel a transfer?",
+    "answer": "You can cancel a pending transfer before it's processed: go to Payments → Transfers → find the transfer → Cancel Transfer. Once a transfer is 'Processing' or 'Completed', it cannot be cancelled. For completed transfers, you'd need to request a refund from the recipient.",
+    "tags": ["transfer", "cancel", "pending", "refund"]
+  },
+  {
+    "id": "refund",
+    "question": "How do I request a refund for a payment?",
+    "answer": "To request a refund: (1) First try to get the refund from the merchant directly — most refunds come through within 5–10 business days. (2) If the merchant refuses or is unresponsive, raise a dispute in the app: Transactions → [transaction] → Dispute Transaction. (3) Disputes are reviewed within 15 business days.",
+    "tags": ["refund", "dispute", "chargeback", "merchant"]
+  },
+  {
+    "id": "balance_not_updated",
+    "question": "My balance is not updated after a payment or transfer",
+    "answer": "Balance updates: (1) Card payments reflect instantly. (2) Bank transfers can take up to 1 business day. (3) Refunds take 3–10 business days depending on the merchant. If your balance hasn't updated after the expected time, check Transactions for the pending item, then contact support if it's been more than 3 business days.",
+    "tags": ["balance", "not updated", "pending", "refresh"]
+  },
+  {
+    "id": "change_pin",
+    "question": "How do I change my PIN?",
+    "answer": "To change your PIN: go to Cards → Manage Card → Change PIN. You'll need to enter your current PIN first, then set a new 4-digit PIN. If you've forgotten your PIN, select 'Forgotten PIN' — you'll need to verify your identity via the app. The new PIN is active immediately.",
+    "tags": ["PIN", "change", "forgotten", "security"]
+  },
+  {
+    "id": "pin_blocked",
+    "question": "My PIN is blocked",
+    "answer": "Your PIN is blocked after 3 incorrect attempts for security. To unblock: go to Cards → Manage Card → Unblock PIN. You'll need to verify your identity using biometrics or your passcode. Alternatively, you can set a new PIN immediately after identity verification.",
+    "tags": ["PIN", "blocked", "incorrect", "unblock"]
+  },
+  {
+    "id": "virtual_card",
+    "question": "How do I get a virtual card?",
+    "answer": "To get a virtual card: go to Cards → Add Card → Virtual Card. Your virtual card is ready to use instantly for online payments. It has a separate card number, CVV, and expiry for added security. You can also create disposable virtual cards for single-use purchases in Cards → Add Card → Disposable Card.",
+    "tags": ["virtual card", "online", "disposable", "digital"]
+  },
+  {
+    "id": "apple_google_pay",
+    "question": "How do I set up Apple Pay or Google Pay?",
+    "answer": "To add your card to Apple Pay: open Wallet app → + → follow the steps to add your card. For Google Pay: open Google Pay app → Add Card → your card will be verified automatically. Once added, tap your phone at any contactless terminal to pay. You may need to verify via the app the first time.",
+    "tags": ["apple pay", "google pay", "mobile payment", "wallet", "NFC"]
+  },
+  {
+    "id": "account_terminate",
+    "question": "How do I close my account?",
+    "answer": "To close your account: go to Profile → Account → Close Account. Before closing: (1) Withdraw or transfer any remaining balance. (2) Cancel any recurring payments. (3) Save any statements you need. Account closure is permanent and takes 1–2 business days to process. Any pending transactions must settle first.",
+    "tags": ["close account", "terminate", "cancel subscription"]
+  },
+  {
+    "id": "verify_identity",
+    "question": "How do I verify my identity?",
+    "answer": "To verify your identity: go to Profile → Verification → Verify Identity. You'll need: (1) A valid government-issued ID (passport or driver's license). (2) A selfie for facial recognition. Verification usually completes within 5 minutes. Until verified, some features like high-value transfers may be restricted.",
+    "tags": ["verify", "identity", "KYC", "ID", "document"]
+  },
+  {
+    "id": "passcode_forgotten",
+    "question": "I forgot my passcode / password",
+    "answer": "To reset your passcode: on the login screen, tap 'Forgot Passcode' → verify your identity via email or biometrics → set a new passcode. If you can't access your email either, contact support — you'll need to verify your identity with your ID document.",
+    "tags": ["passcode", "password", "forgotten", "reset", "login"]
+  },
+  {
+    "id": "international_transfer",
+    "question": "How do I make an international transfer?",
+    "answer": "To make an international transfer: go to Payments → Send Money → International Transfer. You'll need the recipient's: IBAN (for SEPA/Europe), or SWIFT/BIC code + account number (for other countries). Review the exchange rate and fees before confirming. Transfers to 30+ countries are supported. Large transfers (>$5,000) may require additional verification.",
+    "tags": ["international", "transfer", "SWIFT", "IBAN", "abroad", "overseas"]
+  },
+  {
+    "id": "edit_personal_details",
+    "question": "How do I update my personal details?",
+    "answer": "To update personal details: go to Profile → Personal Details. You can update: phone number, email address, and home address. Name changes require identity re-verification. For security, changes to sensitive details (email, phone) require confirmation via your existing contact method before taking effect.",
+    "tags": ["personal details", "update", "name", "address", "email", "phone"]
+  },
+  {
+    "id": "country_support",
+    "question": "Which countries are supported?",
+    "answer": "Our service is available in 30+ countries across Europe, North America, and Asia-Pacific. Card payments are accepted wherever Visa/Mastercard is accepted (180+ countries). International transfers are supported to 50+ countries. Some features (like cash withdrawals) may be limited depending on your country. Check the app for your specific region's features.",
+    "tags": ["country", "supported", "available", "region", "international"]
+  },
+  {
+    "id": "receiving_money",
+    "question": "How do I receive money / what are my account details?",
+    "answer": "To receive money: go to Add Money → Receive Money — your account details are shown here (account number, sort code, and IBAN). Share these with the sender. Domestic transfers arrive same-day or next business day. International transfers via SWIFT take 2–5 business days. There's no fee to receive money.",
+    "tags": ["receive money", "account details", "IBAN", "sort code", "incoming"]
+  },
+  {
+    "id": "activate_card",
+    "question": "How do I activate my new card?",
+    "answer": "To activate your new card: go to Cards → Your Card → Activate Card, then enter the last 4 digits of your card number. Alternatively, you can activate it by making your first purchase with your PIN at any chip-and-PIN terminal. Your card is ready to use immediately after activation.",
+    "tags": ["activate", "card", "new card", "first use"]
+  },
+  {
+    "id": "freeze_account",
+    "question": "How do I freeze or lock my account?",
+    "answer": "To freeze your card instantly: go to Cards → Manage Card → Freeze Card. When frozen, all card transactions are blocked but you can still view your balance and transactions. Unfreeze at any time with one tap. To freeze your entire account, contact support — this requires identity verification.",
+    "tags": ["freeze", "lock", "card", "account", "security", "suspend"]
+  },
+  {
+    "id": "card_about_to_expire",
+    "question": "My card is about to expire, what happens?",
+    "answer": "Your replacement card is automatically issued 30 days before expiry and sent to your registered address. You'll receive an email notification when it ships. Your card number stays the same — only the expiry date and CVV change. Update your card details with any merchants that have your card saved.",
+    "tags": ["card", "expire", "expiry", "renewal", "replacement"]
+  },
+  {
+    "id": "compromised_card",
+    "question": "I think my card details have been compromised",
+    "answer": "Act immediately: (1) Freeze your card in the app under Cards → Freeze Card. (2) Check your recent transactions for any unauthorized charges. (3) Report suspicious transactions via Transactions → [transaction] → Report Fraud. (4) Order a new card with a new number from Cards → Report Card Stolen. We'll investigate and refund any fraudulent charges.",
+    "tags": ["compromised", "fraud", "security", "stolen", "unauthorized"]
+  },
+  {
+    "id": "card_payment_fee",
+    "question": "Why was I charged a fee for a card payment?",
+    "answer": "Card payment fees may apply for: (1) Currency conversion (0.5% weekdays, 1% weekends). (2) ATM cash withdrawals beyond your free allowance. (3) Some merchants charge a surcharge for card payments — this is set by the merchant, not us. Check the fee breakdown in Transactions → [transaction] → Fee Details.",
+    "tags": ["fee", "card payment", "charge", "currency", "ATM"]
+  },
+  {
+    "id": "card_payment_unrecognised",
+    "question": "I don't recognise a card payment on my statement",
+    "answer": "First, check if the merchant name might appear differently (e.g., parent company name). If you still don't recognise it: (1) Check if a family member used the card. (2) Check for subscriptions you may have forgotten. (3) If genuinely unrecognised, tap the transaction → Dispute Transaction. We'll investigate within 15 business days.",
+    "tags": ["unrecognised", "unknown", "statement", "transaction", "dispute"]
+  },
+  {
+    "id": "card_swallowed",
+    "question": "My card was swallowed by an ATM",
+    "answer": "If an ATM retains your card: (1) Note the ATM location, bank name, and time. (2) Immediately freeze your card in the app. (3) Contact the ATM's bank to retrieve your card — bring ID. (4) If you can't retrieve it, report it as lost and order a replacement in Cards → Order New Card. The replacement arrives in 3–5 business days.",
+    "tags": ["ATM", "swallowed", "retained", "card", "stuck"]
+  },
+  {
+    "id": "atm_cash_withdrawal",
+    "question": "How do I withdraw cash from an ATM? Are there fees?",
+    "answer": "You can withdraw cash at any Visa/Mastercard ATM worldwide. Fee structure: first $200/month free, then $1.50 per withdrawal. International ATMs may add their own surcharge. Daily withdrawal limit is $500 (adjustable in Cards → ATM Limits). To avoid fees, use ATMs within our partner network shown in the app.",
+    "tags": ["ATM", "cash", "withdrawal", "fee", "limit"]
+  },
+  {
+    "id": "declined_cash_withdrawal",
+    "question": "My ATM cash withdrawal was declined",
+    "answer": "Cash withdrawal declined reasons: (1) Daily or monthly ATM limit reached — check in Cards → ATM Limits. (2) Insufficient balance. (3) International ATM access not enabled — enable in Cards → International ATM. (4) PIN entered incorrectly 3 times causes a block. (5) ATM itself may be out of service — try another ATM.",
+    "tags": ["ATM", "declined", "withdrawal", "limit", "PIN"]
+  },
+  {
+    "id": "direct_debit_unrecognised",
+    "question": "I don't recognise a direct debit payment",
+    "answer": "To review your direct debits: go to Payments → Direct Debits. If you see one you don't recognise: (1) The company name may differ from what you signed up for. (2) If genuinely unauthorised, cancel it immediately under Payments → Direct Debits → Cancel, and raise a dispute to get a refund.",
+    "tags": ["direct debit", "unrecognised", "cancel", "refund", "subscription"]
+  },
+  {
+    "id": "top_up_limits",
+    "question": "What are the top-up limits?",
+    "answer": "Default top-up limits: $1,000/day and $5,000/month. Limits can be increased by completing full identity verification. Your current limits are shown in Settings → Top-up Limits. Bank transfer top-ups typically have higher limits than card top-ups.",
+    "tags": ["top up", "limit", "maximum", "daily", "monthly"]
+  },
+  {
+    "id": "top_up_reverted",
+    "question": "My top up was reverted or reversed",
+    "answer": "Top-ups are reversed if: (1) Your card/bank declined the payment after initial acceptance. (2) Your top-up limit was exceeded. (3) Security checks failed. The funds return to your source account within 3–5 business days. Contact support with the transaction reference if the reversal seems incorrect.",
+    "tags": ["top up", "reversed", "reverted", "returned", "failed"]
+  },
+  {
+    "id": "automatic_top_up",
+    "question": "How do I set up automatic top-up?",
+    "answer": "To enable automatic top-up: go to Add Money → Automatic Top-up → Enable. You can set a minimum balance threshold (e.g., auto top-up $50 when balance falls below $10) and choose your top-up source (card or bank account). You can disable or adjust this anytime in the same menu.",
+    "tags": ["automatic", "auto top-up", "recurring", "balance threshold"]
+  },
+  {
+    "id": "transfer_fee",
+    "question": "Are there fees for transfers?",
+    "answer": "Fee structure: Domestic transfers — free. SEPA (Europe) — free. International SWIFT — $3–$5 flat fee plus 0.5% exchange rate margin. Transfer fees are shown before you confirm. For frequent international transfers, our premium plan offers reduced fees.",
+    "tags": ["transfer", "fee", "cost", "international", "SEPA", "SWIFT"]
+  },
+  {
+    "id": "transfer_limit",
+    "question": "What is the transfer limit?",
+    "answer": "Default transfer limits: $5,000/day and $20,000/month. Limits increase automatically with full identity verification. Large transfers (>$5,000) may require additional documentation for compliance. Check your current limit in Payments → Transfer Limits. Limits can be temporarily increased by contacting support.",
+    "tags": ["transfer", "limit", "maximum", "daily", "monthly", "large"]
+  },
+  {
+    "id": "refund_not_showing",
+    "question": "My refund is not showing up",
+    "answer": "Refund timelines: (1) Card refunds from merchants take 3–10 business days to appear. (2) The refund may show as 'Pending' in your Transactions. (3) If it's been over 10 business days and the merchant confirmed the refund, contact us with the merchant's refund reference number and we'll chase it.",
+    "tags": ["refund", "not showing", "missing", "pending", "merchant"]
+  },
+  {
+    "id": "reverted_payment",
+    "question": "A payment was reverted or reversed on my account",
+    "answer": "Payment reversals happen when: (1) A merchant cancels or refunds a transaction. (2) A disputed transaction was resolved in your favour. (3) A fraudulent transaction was identified and reversed. The reversed amount returns to your balance within 1–3 business days. Check Transactions for details.",
+    "tags": ["reverted", "reversed", "refund", "cancelled", "payment"]
+  },
+  {
+    "id": "identity_doc_rejected",
+    "question": "My identity document was rejected during verification",
+    "answer": "Document rejection reasons: (1) Image too blurry or dark — use good lighting and hold the camera steady. (2) Document expired. (3) All four corners must be visible in the photo. (4) Name on document doesn't match your account. Try again with a different document (passport usually works best) or contact support for manual review.",
+    "tags": ["identity", "document", "rejected", "verification", "KYC", "photo"]
+  },
+  {
+    "id": "unable_verify_identity",
+    "question": "I'm unable to complete identity verification",
+    "answer": "If automated verification fails: (1) Try a different document (passport is most reliable). (2) Ensure good lighting for the selfie. (3) Remove glasses for the selfie. (4) If your document is in a non-Latin script, contact support for manual verification. Verification is required to unlock full account features and higher limits.",
+    "tags": ["verify", "identity", "unable", "failed", "KYC", "selfie"]
+  },
+  {
+    "id": "why_verify",
+    "question": "Why do I need to verify my identity?",
+    "answer": "Identity verification (KYC) is required by financial regulations in all countries we operate in. It protects you and other customers from fraud and money laundering. Without verification: daily limits are restricted to $500, and some features like international transfers are unavailable. Verification is a one-time process.",
+    "tags": ["why", "verify", "identity", "KYC", "regulation", "required"]
+  },
+  {
+    "id": "verify_source_of_funds",
+    "question": "Why are you asking about my source of funds?",
+    "answer": "We're required by anti-money laundering (AML) regulations to verify the source of large deposits or unusual transaction patterns. This is a standard banking compliance procedure. You may be asked to provide: pay slips, bank statements, or a brief description of the fund source. This information is kept confidential.",
+    "tags": ["source of funds", "AML", "compliance", "regulation", "large deposit"]
+  },
+  {
+    "id": "lost_phone",
+    "question": "I lost my phone, how do I secure my account?",
+    "answer": "If you lost your phone: (1) Log in from another device and go to Security → Devices → Remove [lost phone]. (2) Freeze your card immediately in case the finder attempts mobile payments. (3) Change your passcode. (4) Contact support to temporarily lock your account if needed. Your account data is protected even if someone accesses your phone.",
+    "tags": ["lost phone", "stolen phone", "security", "device", "remote lock"]
+  },
+  {
+    "id": "transaction_charged_twice",
+    "question": "I was charged twice for the same transaction",
+    "answer": "Duplicate charges can happen due to merchant processing errors or network timeouts. Steps: (1) Check if one charge shows as 'Pending' — it may auto-reverse within 7 days. (2) If both are 'Completed', go to Transactions → [second charge] → Dispute Transaction and select 'Duplicate charge'. We'll contact the merchant and refund the duplicate.",
+    "tags": ["charged twice", "duplicate", "double charge", "transaction"]
+  },
+  {
+    "id": "virtual_card_not_working",
+    "question": "My virtual card is not working for online payments",
+    "answer": "Virtual card issues: (1) Ensure 3D Secure (3DS) is enabled: Cards → Virtual Card → Enable 3D Secure. (2) Check the card is not frozen or expired. (3) Some merchants don't accept virtual cards — try generating a new disposable card for that merchant. (4) Ensure you're using the virtual card number (not your physical card number).",
+    "tags": ["virtual card", "not working", "online", "3D secure", "declined"]
+  },
+  {
+    "id": "card_linking",
+    "question": "How do I link my card to another app or wallet?",
+    "answer": "To link your card to third-party apps (PayPal, Amazon, etc.): use the card number, expiry, and CVV shown in Cards → Your Card → Show Card Details. For digital wallets (Apple Pay, Google Pay), go to Cards → Add to Wallet. You may receive a one-time verification code on your registered number to confirm the link.",
+    "tags": ["link card", "connect", "PayPal", "wallet", "third party"]
+  },
+  {
+    "id": "currency_support",
+    "question": "What currencies do you support?",
+    "answer": "We support holding and exchanging 30+ currencies including USD, EUR, GBP, JPY, AUD, CAD, CHF, SGD, HKD, NOK, SEK, DKK, PLN, CZK, and more. Exchange at the real mid-market rate. View all supported currencies in the app under Exchange → All Currencies. New currencies are added regularly.",
+    "tags": ["currency", "currencies", "support", "exchange", "multi-currency"]
+  },
+  {
+    "id": "exchange_via_app",
+    "question": "How do I exchange currency in the app?",
+    "answer": "To exchange currency: tap Exchange → select the source and target currencies → enter the amount → review the rate → confirm. The exchange is instant and uses the real-time mid-market rate. You can set a rate alert in Exchange → Rate Alerts to be notified when your target rate is available.",
+    "tags": ["exchange", "currency", "convert", "app", "how to"]
+  },
+  {
+    "id": "extra_charge_statement",
+    "question": "There is an unexpected charge on my statement",
+    "answer": "Unexpected charges could be: (1) Merchant name displaying differently than expected. (2) A subscription renewal you forgot about. (3) Currency conversion fee from a foreign transaction. (4) ATM fee. Tap the charge in Transactions for a full breakdown. If still unrecognised, tap Dispute Transaction. We investigate all disputes within 15 business days.",
+    "tags": ["unexpected charge", "statement", "unknown", "fee", "dispute"]
+  },
+  {
+    "id": "pending_card_payment",
+    "question": "Why is my card payment still pending?",
+    "answer": "Card payments usually settle within 1–3 business days. Pending means the merchant has authorised the payment but hasn't collected the funds yet. Common for hotels, car rentals, and gas stations that pre-authorise more than you spend. The pending amount may differ from the final charge. If pending for more than 7 days, contact support.",
+    "tags": ["pending", "card payment", "authorisation", "hold", "settlement"]
+  },
+  {
+    "id": "supported_cards",
+    "question": "What type of card do I get? Visa or Mastercard?",
+    "answer": "The card type depends on your region: most accounts receive a Visa debit card, while some regions receive Mastercard. Both are accepted at 50+ million locations worldwide and ATMs globally. You can check your card network in Cards → Your Card → Card Details. Virtual cards follow the same network as your physical card.",
+    "tags": ["Visa", "Mastercard", "card type", "network", "debit"]
+  },
+  {
+    "id": "age_limit",
+    "question": "What is the minimum age to open an account?",
+    "answer": "You must be at least 18 years old to open a standard account. In some regions, we offer a Junior account for ages 6–17 linked to a parent's account, with parental controls and spending limits. Proof of age is required during identity verification. Contact support if you're unsure about eligibility in your country.",
+    "tags": ["age", "minimum age", "under 18", "junior", "eligibility"]
+  },
+  {
+    "id": "beneficiary_not_allowed",
+    "question": "I can't add a new beneficiary / recipient",
+    "answer": "You may be unable to add a beneficiary if: (1) Your identity verification is incomplete — verify in Profile → Verification. (2) You've reached your beneficiary limit (50 recipients max). (3) The recipient's country is not supported for transfers. (4) The account details entered are invalid. Double-check the IBAN/account number format for the recipient's country.",
+    "tags": ["beneficiary", "recipient", "add", "transfer", "blocked"]
+  },
+  {
+    "id": "verify_top_up",
+    "question": "Why is my top-up being verified / put on hold?",
+    "answer": "Large or unusual top-ups may be held for security verification. This typically happens for first-time large top-ups, top-ups from new payment sources, or if your account is newly created. You may be asked to confirm the source of funds. Verification usually completes within 1–2 business days. Contact support to expedite.",
+    "tags": ["top up", "verify", "hold", "security", "source of funds"]
+  }
+]

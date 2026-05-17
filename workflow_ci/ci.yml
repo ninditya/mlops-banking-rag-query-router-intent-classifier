@@ -1,0 +1,84 @@
+name: CI - Banking Router Retraining
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'MLProject/**'
+  workflow_dispatch:
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./MLProject
+    # Job-level env supaya semua steps (termasuk Docker build) bisa akses DagsHub
+    env:
+      MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+      MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
+      MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install MLflow + dependencies
+        run: |
+          pip install mlflow==2.16.2 scikit-learn==1.5.1 pandas==2.2.2 \
+            numpy==1.26.4 matplotlib==3.9.0 seaborn==0.13.2
+
+      - name: Run MLflow Project
+        run: |
+          mlflow run . --env-manager=local
+
+      # K3 Skilled: upload artefak ke GitHub
+      # continue-on-error karena artifacts ada di DagsHub jika remote tracking
+      - name: Upload trained model artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: trained-model
+          path: MLProject/artifacts/
+        continue-on-error: true
+
+      # K3 Advance: build Docker image dengan mlflow build-docker
+      - name: Get run_id from training output
+        id: get_run
+        run: |
+          if [ ! -f mlflow_run_id.txt ]; then
+            echo "❌ mlflow_run_id.txt tidak ditemukan. Training gagal?"
+            exit 1
+          fi
+          RUN_ID=$(cat mlflow_run_id.txt)
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_OUTPUT
+          echo "✅ Run ID: $RUN_ID"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker image with MLflow
+        run: |
+          mlflow models build-docker \
+            -m "runs:/${{ steps.get_run.outputs.RUN_ID }}/model" \
+            -n "${{ secrets.DOCKERHUB_USERNAME }}/banking-router:latest"
+
+      - name: Push to Docker Hub
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/banking-router:latest
+
+      - name: Save DockerHub image link
+        run: |
+          echo "https://hub.docker.com/r/${{ secrets.DOCKERHUB_USERNAME }}/banking-router" \
+            > DockerHub_link.txt
+          cat DockerHub_link.txt

@@ -1,0 +1,10 @@
+name: banking77-intent-router
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      C: {type: float, default: 5.0}
+      data_path: {type: str, default: "banking77_preprocessing"}
+    command: "python modelling.py --C {C} --data_path {data_path}"

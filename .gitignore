@@ -1,0 +1,47 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Binary model files — besar & binary, tracked di HF Hub
+# JSON/CSV/PNG di artifacts/ tetap di-commit (dokumentasi portfolio)
+*.pkl
+*.joblib
+
+# MLflow local tracking (64MB, regenerable dari training script)
+mlruns/
+
+# Raw HuggingFace cache
+banking77_raw/
+~/.cache/huggingface/
+
+# Nested repo — HF Space terpisah, isinya sudah ada di serving/
+banking-intent-router/
+
+# Branding & marketing (bukan bagian dari kode)
+branding/
+
+# Env & secrets
+.env
+*.env
+.env.*
+!.env.example
+
+# Monitoring runtime data
+grafana-data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

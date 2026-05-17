@@ -1,0 +1,45 @@
+name: Preprocessing Banking77
+
+on:
+  push:
+    paths:
+      - 'banking77_raw/**'
+      - 'preprocessing/automate_*.py'
+  workflow_dispatch:  # Bisa trigger manual
+
+jobs:
+  preprocess:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas scikit-learn datasets
+
+      - name: Run preprocessing
+        run: |
+          cd preprocessing
+          python automate_NamaKamu.py \
+            --input huggingface \
+            --output banking77_preprocessing
+
+      - name: Upload preprocessed dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: banking77-preprocessed
+          path: preprocessing/banking77_preprocessing/
+
+      - name: Commit & push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add preprocessing/banking77_preprocessing/
+          git diff --staged --quiet || git commit -m "Auto-update preprocessed dataset"
+          git push

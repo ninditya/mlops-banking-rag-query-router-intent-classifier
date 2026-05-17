@@ -1,0 +1,7 @@
+Isi file ini setelah CI berhasil push ke Docker Hub.
+
+Format:
+https://hub.docker.com/r/nindit/banking-router
+
+
+Catatan: ci.yml akan otomatis mencetak link ini di log step "Save DockerHub image link".
