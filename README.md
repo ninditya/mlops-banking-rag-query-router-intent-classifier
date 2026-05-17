@@ -2,6 +2,18 @@
 
 > Reduce banking chatbot LLM inference costs by ~96% using a confidence-based 4-tier routing system, without sacrificing answer quality.
 
+[![Live Demo](https://img.shields.io/badge/🤗%20Demo-HuggingFace%20Space-yellow)](https://huggingface.co/spaces/ninditya/banking-intent-router)
+[![Model](https://img.shields.io/badge/🤗%20Model-HuggingFace%20Hub-blue)](https://huggingface.co/ninditya/banking-router-model)
+
+## Live Demo
+
+| | Link |
+|---|---|
+| **Interactive demo** | [huggingface.co/spaces/ninditya/banking-intent-router](https://huggingface.co/spaces/ninditya/banking-intent-router) |
+| **Model (SBERT + LinearSVC)** | [huggingface.co/ninditya/banking-router-model](https://huggingface.co/ninditya/banking-router-model) |
+
+Type any banking question — the UI shows which tier handled it, the confidence score, latency, and the actual response.
+
 ---
 
 ## Problem
@@ -101,7 +113,7 @@ $0.001    $0.010     $0.050
 ├── serving/
 │   ├── inference.py                   # FastAPI serving + chatbot UI
 │   ├── rag.py                         # FAISS retrieval module
-│   ├── banking_faq.json               # Knowledge base (25 Q&A)
+│   ├── banking_faq.json               # Knowledge base (59 Q&A)
 │   └── static/index.html             # Chatbot frontend
 │
 ├── monitoring/
@@ -121,7 +133,7 @@ $0.001    $0.010     $0.050
 ### 1. Setup Environment
 
 ```bash
-git clone https://github.com/ninditya_sna/Banking-RAG-Query-Router-Intent-Classifier
+git clone https://github.com/ninditya/mlops-banking-rag-query-router-intent-classifier
 cd Banking-RAG-Query-Router-Intent-Classifier
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt

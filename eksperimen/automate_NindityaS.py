@@ -25,7 +25,7 @@ def load_data(source: str = "huggingface") -> pd.DataFrame:
     """Load Banking77 dataset dari HuggingFace atau file lokal."""
     if source == "huggingface":
         logger.info("Loading Banking77 from HuggingFace...")
-        ds = load_dataset("PolyAI/banking77")
+        ds = load_dataset("PolyAI/banking77", trust_remote_code=True)
         train_df = pd.DataFrame(ds["train"])
         test_df = pd.DataFrame(ds["test"])
         df = pd.concat([train_df, test_df], ignore_index=True)
