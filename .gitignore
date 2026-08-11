@@ -38,6 +38,12 @@ branding/
 # Monitoring runtime data
 grafana-data/
 
+# Evaluation runtime output — dataset/generated_eval_set.json tetap di-commit
+# (contoh hasil run, dokumentasi portfolio); ini cache/output run lokal saja
+.deepeval/
+.deepeval_cache.json
+evaluation/ragas_eval/ragas_results.csv
+
 # OS
 .DS_Store
 Thumbs.db

@@ -1,0 +1,23 @@
+# ============================================================
+# Evaluation — DeepEval + Ragas (judge: Claude)
+# Install: pip install -r evaluation/requirements.txt
+# Catatan: generate_dataset.py juga butuh faiss-cpu + sentence-transformers
+# (sudah ada di ../requirements.txt kalau serving/ sudah pernah di-setup)
+# ============================================================
+
+anthropic
+openai
+deepeval
+ragas
+
+# Ragas 0.4.x masih meng-import langchain_community.chat_models.vertexai secara
+# tanpa syarat (module-level), yang sudah dihapus di langchain-community>=0.4.
+# Pin ke rangkaian langchain 0.3.x (pra-1.0) yang masih punya submodule itu,
+# supaya tidak bentrok versi dengan langchain-core. Kalau suatu saat upgrade
+# ragas, cek dulu apakah bug ini sudah diperbaiki sebelum melepas pin ini.
+langchain-community==0.3.27
+langchain-anthropic==0.3.22
+langchain-openai==0.3.35
+
+datasets
+pytest

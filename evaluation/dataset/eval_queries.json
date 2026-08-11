@@ -1,0 +1,50 @@
+[
+  {
+    "query": "My debit card got blocked, what do I do now?",
+    "ground_truth_id": "card_blocked"
+  },
+  {
+    "query": "Someone stole my wallet with my card in it",
+    "ground_truth_id": "card_lost_stolen"
+  },
+  {
+    "query": "It's been over a week and my new card hasn't shown up",
+    "ground_truth_id": "card_arrival"
+  },
+  {
+    "query": "I tried to pay online and it kept getting declined",
+    "ground_truth_id": "card_not_working"
+  },
+  {
+    "query": "How much does it cost to convert USD to EUR here?",
+    "ground_truth_id": "exchange_rate"
+  },
+  {
+    "query": "I sent money abroad but it's stuck in pending",
+    "ground_truth_id": "transfer_pending"
+  },
+  {
+    "query": "Can I get my money back for a purchase I didn't make?",
+    "ground_truth_id": "refund"
+  },
+  {
+    "query": "I need to reset my PIN code",
+    "ground_truth_id": "change_pin"
+  },
+  {
+    "query": "I want to shut down my bank account completely",
+    "ground_truth_id": "account_terminate"
+  },
+  {
+    "query": "The app is asking me to prove who I am, how does that work?",
+    "ground_truth_id": "verify_identity"
+  },
+  {
+    "query": "I dropped my phone in the toilet, is my account still safe?",
+    "ground_truth_id": "lost_phone"
+  },
+  {
+    "query": "I got billed twice for the same coffee shop purchase",
+    "ground_truth_id": "transaction_charged_twice"
+  }
+]

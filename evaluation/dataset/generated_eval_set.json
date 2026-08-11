@@ -1,0 +1,170 @@
+[
+  {
+    "query": "My debit card got blocked, what do I do now?",
+    "ground_truth_id": "card_blocked",
+    "ground_truth_answer": "If your card is blocked, you can unblock it instantly through the app: go to Cards \u2192 Manage Card \u2192 Unblock Card. If you didn't block it yourself, freeze it immediately and contact support \u2014 it may have been blocked due to suspicious activity.",
+    "predicted_id": "card_blocked",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "If your card is blocked, you can unblock it instantly through the app: go to Cards \u2192 Manage Card \u2192 Unblock Card. If you didn't block it yourself, freeze it immediately and contact support \u2014 it may have been blocked due to suspicious activity.",
+      "If your card isn't working: (1) Check your balance is sufficient. (2) Ensure the card is not frozen or expired. (3) For online payments, check if 3D Secure is enabled in the app. (4) Some merchants don't accept virtual cards \u2014 try a physical card. (5) If the issue persists, contact support with the error code.",
+      "Card payments usually settle within 1\u20133 business days. Pending means the merchant has authorised the payment but hasn't collected the funds yet. Common for hotels, car rentals, and gas stations that pre-authorise more than you spend. The pending amount may differ from the final charge. If pending for more than 7 days, contact support."
+    ],
+    "rag_answer": "If your card is blocked, you can unblock it instantly through the app: go to Cards \u2192 Manage Card \u2192 Unblock Card. If you didn't block it yourself, freeze it immediately and contact support \u2014 it may have been blocked due to suspicious activity.",
+    "llm_answer": "I'd be happy to help you resolve the issue. To unblock your debit card, please call our 24/7 customer service number at 1-800-BANK-123 (1-800-226-5123) from a different phone line or a landline. Alternatively, you can visit your nearest branch during business hours to speak with a representative in person."
+  },
+  {
+    "query": "Someone stole my wallet with my card in it",
+    "ground_truth_id": "card_lost_stolen",
+    "ground_truth_answer": "Don't worry \u2014 freeze your card immediately in the app under Cards \u2192 Freeze Card. We'll block all transactions. You can then report it as lost/stolen and order a replacement card. The replacement arrives in 3\u20135 business days at no extra charge.",
+    "predicted_id": "card_lost_stolen",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "Don't worry \u2014 freeze your card immediately in the app under Cards \u2192 Freeze Card. We'll block all transactions. You can then report it as lost/stolen and order a replacement card. The replacement arrives in 3\u20135 business days at no extra charge.",
+      "Act immediately: (1) Freeze your card in the app under Cards \u2192 Freeze Card. (2) Check your recent transactions for any unauthorized charges. (3) Report suspicious transactions via Transactions \u2192 [transaction] \u2192 Report Fraud. (4) Order a new card with a new number from Cards \u2192 Report Card Stolen. We'll investigate and refund any fraudulent charges.",
+      "If an ATM retains your card: (1) Note the ATM location, bank name, and time. (2) Immediately freeze your card in the app. (3) Contact the ATM's bank to retrieve your card \u2014 bring ID. (4) If you can't retrieve it, report it as lost and order a replacement in Cards \u2192 Order New Card. The replacement arrives in 3\u20135 business days."
+    ],
+    "rag_answer": "Don't worry \u2014 freeze your card immediately in the app under Cards \u2192 Freeze Card. We'll block all transactions. You can then report it as lost/stolen and order a replacement card. The replacement arrives in 3\u20135 business days at no extra charge.",
+    "llm_answer": "I'm so sorry to hear that. To protect your account, please contact us immediately and report the incident. You can reach us by calling our 24/7 customer service number or by visiting your nearest branch in person. We'll help you cancel your card and issue a replacement, and we may also be able to provide you with a temporary card for emergency use."
+  },
+  {
+    "query": "It's been over a week and my new card hasn't shown up",
+    "ground_truth_id": "card_arrival",
+    "ground_truth_answer": "Standard cards arrive within 3\u20137 business days. Express delivery takes 1\u20132 business days (additional fee applies). Track your card status in the app: Cards \u2192 Your Card \u2192 Track Delivery. You'll also receive an email notification when it ships.",
+    "predicted_id": "activate_card",
+    "retrieval_correct": false,
+    "retrieved_contexts": [
+      "To activate your new card: go to Cards \u2192 Your Card \u2192 Activate Card, then enter the last 4 digits of your card number. Alternatively, you can activate it by making your first purchase with your PIN at any chip-and-PIN terminal. Your card is ready to use immediately after activation.",
+      "Standard cards arrive within 3\u20137 business days. Express delivery takes 1\u20132 business days (additional fee applies). Track your card status in the app: Cards \u2192 Your Card \u2192 Track Delivery. You'll also receive an email notification when it ships.",
+      "If your card is blocked, you can unblock it instantly through the app: go to Cards \u2192 Manage Card \u2192 Unblock Card. If you didn't block it yourself, freeze it immediately and contact support \u2014 it may have been blocked due to suspicious activity."
+    ],
+    "rag_answer": "To activate your new card: go to Cards \u2192 Your Card \u2192 Activate Card, then enter the last 4 digits of your card number. Alternatively, you can activate it by making your first purchase with your PIN at any chip-and-PIN terminal. Your card is ready to use immediately after activation.",
+    "llm_answer": "I'd be happy to help you with that. Can you please confirm your mailing address that you provided when you applied for the new card, as this is where we would have sent it?"
+  },
+  {
+    "query": "I tried to pay online and it kept getting declined",
+    "ground_truth_id": "card_not_working",
+    "ground_truth_answer": "If your card isn't working: (1) Check your balance is sufficient. (2) Ensure the card is not frozen or expired. (3) For online payments, check if 3D Secure is enabled in the app. (4) Some merchants don't accept virtual cards \u2014 try a physical card. (5) If the issue persists, contact support with the error code.",
+    "predicted_id": "card_not_working",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "If your card isn't working: (1) Check your balance is sufficient. (2) Ensure the card is not frozen or expired. (3) For online payments, check if 3D Secure is enabled in the app. (4) Some merchants don't accept virtual cards \u2014 try a physical card. (5) If the issue persists, contact support with the error code.",
+      "Virtual card issues: (1) Ensure 3D Secure (3DS) is enabled: Cards \u2192 Virtual Card \u2192 Enable 3D Secure. (2) Check the card is not frozen or expired. (3) Some merchants don't accept virtual cards \u2014 try generating a new disposable card for that merchant. (4) Ensure you're using the virtual card number (not your physical card number).",
+      "To request a refund: (1) First try to get the refund from the merchant directly \u2014 most refunds come through within 5\u201310 business days. (2) If the merchant refuses or is unresponsive, raise a dispute in the app: Transactions \u2192 [transaction] \u2192 Dispute Transaction. (3) Disputes are reviewed within 15 business days."
+    ],
+    "rag_answer": "If your card isn't working: (1) Check your balance is sufficient. (2) Ensure the card is not frozen or expired. (3) For online payments, check if 3D Secure is enabled in the app. (4) Some merchants don't accept virtual cards \u2014 try a physical card. (5) If the issue persists, contact support with the error code.",
+    "llm_answer": "I'd be happy to help you troubleshoot the issue. Can you please confirm if you're trying to pay for a specific transaction or if this is a recurring issue with online payments in general?"
+  },
+  {
+    "query": "How much does it cost to convert USD to EUR here?",
+    "ground_truth_id": "exchange_rate",
+    "ground_truth_answer": "We use the real-time interbank exchange rate with no hidden markup. Rates are updated every 30 seconds and displayed in the app before you confirm any transaction. For international transfers and card payments abroad, the rate shown at the time of transaction is what you pay. You can check current rates in the app under Payments \u2192 Exchange Rates.",
+    "predicted_id": "exchange_rate",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "We use the real-time interbank exchange rate with no hidden markup. Rates are updated every 30 seconds and displayed in the app before you confirm any transaction. For international transfers and card payments abroad, the rate shown at the time of transaction is what you pay. You can check current rates in the app under Payments \u2192 Exchange Rates.",
+      "To exchange currency: tap Exchange \u2192 select the source and target currencies \u2192 enter the amount \u2192 review the rate \u2192 confirm. The exchange is instant and uses the real-time mid-market rate. You can set a rate alert in Exchange \u2192 Rate Alerts to be notified when your target rate is available.",
+      "To make an international transfer: go to Payments \u2192 Send Money \u2192 International Transfer. You'll need the recipient's: IBAN (for SEPA/Europe), or SWIFT/BIC code + account number (for other countries). Review the exchange rate and fees before confirming. Transfers to 30+ countries are supported. Large transfers (>$5,000) may require additional verification."
+    ],
+    "rag_answer": "We use the real-time interbank exchange rate with no hidden markup. Rates are updated every 30 seconds and displayed in the app before you confirm any transaction. For international transfers and card payments abroad, the rate shown at the time of transaction is what you pay. You can check current rates in the app under Payments \u2192 Exchange Rates.",
+    "llm_answer": "The cost to convert USD to EUR at our bank is determined by the current exchange rate and a small conversion fee. This fee is typically a percentage of the converted amount, and it may vary depending on the type of account you have and the method of conversion. I can provide you with the exact fee and exchange rate if you'd like to proceed with a conversion. Would you like me to look up the current rates for you?"
+  },
+  {
+    "query": "I sent money abroad but it's stuck in pending",
+    "ground_truth_id": "transfer_pending",
+    "ground_truth_answer": "Transfer timing: Domestic transfers arrive same day or next business day. SEPA transfers (Europe) take 1 business day. International SWIFT transfers take 2\u20135 business days. Transfers initiated after 3pm or on weekends process the next business day. Check transfer status in Payments \u2192 Transfers \u2192 [transfer name].",
+    "predicted_id": "transfer_pending",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "Transfer timing: Domestic transfers arrive same day or next business day. SEPA transfers (Europe) take 1 business day. International SWIFT transfers take 2\u20135 business days. Transfers initiated after 3pm or on weekends process the next business day. Check transfer status in Payments \u2192 Transfers \u2192 [transfer name].",
+      "Card payments usually settle within 1\u20133 business days. Pending means the merchant has authorised the payment but hasn't collected the funds yet. Common for hotels, car rentals, and gas stations that pre-authorise more than you spend. The pending amount may differ from the final charge. If pending for more than 7 days, contact support.",
+      "To make an international transfer: go to Payments \u2192 Send Money \u2192 International Transfer. You'll need the recipient's: IBAN (for SEPA/Europe), or SWIFT/BIC code + account number (for other countries). Review the exchange rate and fees before confirming. Transfers to 30+ countries are supported. Large transfers (>$5,000) may require additional verification."
+    ],
+    "rag_answer": "Transfer timing: Domestic transfers arrive same day or next business day. SEPA transfers (Europe) take 1 business day. International SWIFT transfers take 2\u20135 business days. Transfers initiated after 3pm or on weekends process the next business day. Check transfer status in Payments \u2192 Transfers \u2192 [transfer name].",
+    "llm_answer": "I'd be happy to help you resolve the issue. Can you please provide me with the details of the transaction, including the sender's and recipient's names, the date and time it was sent, and the amount transferred?"
+  },
+  {
+    "query": "Can I get my money back for a purchase I didn't make?",
+    "ground_truth_id": "refund",
+    "ground_truth_answer": "To request a refund: (1) First try to get the refund from the merchant directly \u2014 most refunds come through within 5\u201310 business days. (2) If the merchant refuses or is unresponsive, raise a dispute in the app: Transactions \u2192 [transaction] \u2192 Dispute Transaction. (3) Disputes are reviewed within 15 business days.",
+    "predicted_id": "refund",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "To request a refund: (1) First try to get the refund from the merchant directly \u2014 most refunds come through within 5\u201310 business days. (2) If the merchant refuses or is unresponsive, raise a dispute in the app: Transactions \u2192 [transaction] \u2192 Dispute Transaction. (3) Disputes are reviewed within 15 business days.",
+      "Payment reversals happen when: (1) A merchant cancels or refunds a transaction. (2) A disputed transaction was resolved in your favour. (3) A fraudulent transaction was identified and reversed. The reversed amount returns to your balance within 1\u20133 business days. Check Transactions for details.",
+      "Refund timelines: (1) Card refunds from merchants take 3\u201310 business days to appear. (2) The refund may show as 'Pending' in your Transactions. (3) If it's been over 10 business days and the merchant confirmed the refund, contact us with the merchant's refund reference number and we'll chase it."
+    ],
+    "rag_answer": "To request a refund: (1) First try to get the refund from the merchant directly \u2014 most refunds come through within 5\u201310 business days. (2) If the merchant refuses or is unresponsive, raise a dispute in the app: Transactions \u2192 [transaction] \u2192 Dispute Transaction. (3) Disputes are reviewed within 15 business days.",
+    "llm_answer": "To initiate a refund for a purchase you didn't make, you'll need to provide documentation that proves you didn't authorize the transaction. This can include a copy of your bank statement, a police report if your account was compromised, or a letter from the merchant stating that the purchase was unauthorized. Please contact our customer support team to report the incident and we'll guide you through the next steps."
+  },
+  {
+    "query": "I need to reset my PIN code",
+    "ground_truth_id": "change_pin",
+    "ground_truth_answer": "To change your PIN: go to Cards \u2192 Manage Card \u2192 Change PIN. You'll need to enter your current PIN first, then set a new 4-digit PIN. If you've forgotten your PIN, select 'Forgotten PIN' \u2014 you'll need to verify your identity via the app. The new PIN is active immediately.",
+    "predicted_id": "change_pin",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "To change your PIN: go to Cards \u2192 Manage Card \u2192 Change PIN. You'll need to enter your current PIN first, then set a new 4-digit PIN. If you've forgotten your PIN, select 'Forgotten PIN' \u2014 you'll need to verify your identity via the app. The new PIN is active immediately.",
+      "Your PIN is blocked after 3 incorrect attempts for security. To unblock: go to Cards \u2192 Manage Card \u2192 Unblock PIN. You'll need to verify your identity using biometrics or your passcode. Alternatively, you can set a new PIN immediately after identity verification.",
+      "To reset your passcode: on the login screen, tap 'Forgot Passcode' \u2192 verify your identity via email or biometrics \u2192 set a new passcode. If you can't access your email either, contact support \u2014 you'll need to verify your identity with your ID document."
+    ],
+    "rag_answer": "To change your PIN: go to Cards \u2192 Manage Card \u2192 Change PIN. You'll need to enter your current PIN first, then set a new 4-digit PIN. If you've forgotten your PIN, select 'Forgotten PIN' \u2014 you'll need to verify your identity via the app. The new PIN is active immediately.",
+    "llm_answer": "To reset your PIN code, please visit one of our branches in person, where a representative can assist you. You will need to provide identification to verify your account ownership and then follow the necessary steps to change your PIN. Alternatively, if you have online banking access, you can also reset your PIN through our mobile banking app or website, but you will need to have your account information and security questions readily available."
+  },
+  {
+    "query": "I want to shut down my bank account completely",
+    "ground_truth_id": "account_terminate",
+    "ground_truth_answer": "To close your account: go to Profile \u2192 Account \u2192 Close Account. Before closing: (1) Withdraw or transfer any remaining balance. (2) Cancel any recurring payments. (3) Save any statements you need. Account closure is permanent and takes 1\u20132 business days to process. Any pending transactions must settle first.",
+    "predicted_id": "account_terminate",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "To close your account: go to Profile \u2192 Account \u2192 Close Account. Before closing: (1) Withdraw or transfer any remaining balance. (2) Cancel any recurring payments. (3) Save any statements you need. Account closure is permanent and takes 1\u20132 business days to process. Any pending transactions must settle first.",
+      "To top up by bank transfer: go to Add Money \u2192 Bank Transfer. Use the account details shown (sort code + account number or IBAN). Bank transfers typically arrive within 1 business day. There's no fee for bank transfer top-ups. Use the reference number shown to ensure your transfer is matched correctly.",
+      "To freeze your card instantly: go to Cards \u2192 Manage Card \u2192 Freeze Card. When frozen, all card transactions are blocked but you can still view your balance and transactions. Unfreeze at any time with one tap. To freeze your entire account, contact support \u2014 this requires identity verification."
+    ],
+    "rag_answer": "To close your account: go to Profile \u2192 Account \u2192 Close Account. Before closing: (1) Withdraw or transfer any remaining balance. (2) Cancel any recurring payments. (3) Save any statements you need. Account closure is permanent and takes 1\u20132 business days to process. Any pending transactions must settle first.",
+    "llm_answer": "To close your account, please confirm that you'd like to close all associated services, including any linked credit cards, loans, or investments, and that you've made arrangements to settle any outstanding balances. If that's correct, I can guide you through the next steps. Would you like to close the account in person at a branch or over the phone?"
+  },
+  {
+    "query": "The app is asking me to prove who I am, how does that work?",
+    "ground_truth_id": "verify_identity",
+    "ground_truth_answer": "To verify your identity: go to Profile \u2192 Verification \u2192 Verify Identity. You'll need: (1) A valid government-issued ID (passport or driver's license). (2) A selfie for facial recognition. Verification usually completes within 5 minutes. Until verified, some features like high-value transfers may be restricted.",
+    "predicted_id": "why_verify",
+    "retrieval_correct": false,
+    "retrieved_contexts": [
+      "Identity verification (KYC) is required by financial regulations in all countries we operate in. It protects you and other customers from fraud and money laundering. Without verification: daily limits are restricted to $500, and some features like international transfers are unavailable. Verification is a one-time process.",
+      "To verify your identity: go to Profile \u2192 Verification \u2192 Verify Identity. You'll need: (1) A valid government-issued ID (passport or driver's license). (2) A selfie for facial recognition. Verification usually completes within 5 minutes. Until verified, some features like high-value transfers may be restricted.",
+      "If automated verification fails: (1) Try a different document (passport is most reliable). (2) Ensure good lighting for the selfie. (3) Remove glasses for the selfie. (4) If your document is in a non-Latin script, contact support for manual verification. Verification is required to unlock full account features and higher limits."
+    ],
+    "rag_answer": "Identity verification (KYC) is required by financial regulations in all countries we operate in. It protects you and other customers from fraud and money laundering. Without verification: daily limits are restricted to $500, and some features like international transfers are unavailable. Verification is a one-time process.",
+    "llm_answer": "To verify your identity through our app, you'll need to provide some personal information and complete a few security steps. This is a secure process that helps protect your account and prevent unauthorized access. You can usually complete the verification process by entering a one-time password (OTP) sent to your registered phone number or email, or by using facial recognition if you've previously set it up. If you're having trouble, you can try restarting the process or contacting our support team for assistance."
+  },
+  {
+    "query": "I dropped my phone in the toilet, is my account still safe?",
+    "ground_truth_id": "lost_phone",
+    "ground_truth_answer": "If you lost your phone: (1) Log in from another device and go to Security \u2192 Devices \u2192 Remove [lost phone]. (2) Freeze your card immediately in case the finder attempts mobile payments. (3) Change your passcode. (4) Contact support to temporarily lock your account if needed. Your account data is protected even if someone accesses your phone.",
+    "predicted_id": "lost_phone",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "If you lost your phone: (1) Log in from another device and go to Security \u2192 Devices \u2192 Remove [lost phone]. (2) Freeze your card immediately in case the finder attempts mobile payments. (3) Change your passcode. (4) Contact support to temporarily lock your account if needed. Your account data is protected even if someone accesses your phone.",
+      "If an ATM retains your card: (1) Note the ATM location, bank name, and time. (2) Immediately freeze your card in the app. (3) Contact the ATM's bank to retrieve your card \u2014 bring ID. (4) If you can't retrieve it, report it as lost and order a replacement in Cards \u2192 Order New Card. The replacement arrives in 3\u20135 business days.",
+      "Don't worry \u2014 freeze your card immediately in the app under Cards \u2192 Freeze Card. We'll block all transactions. You can then report it as lost/stolen and order a replacement card. The replacement arrives in 3\u20135 business days at no extra charge."
+    ],
+    "rag_answer": "If you lost your phone: (1) Log in from another device and go to Security \u2192 Devices \u2192 Remove [lost phone]. (2) Freeze your card immediately in case the finder attempts mobile payments. (3) Change your passcode. (4) Contact support to temporarily lock your account if needed. Your account data is protected even if someone accesses your phone.",
+    "llm_answer": "Your account information is not stored on your phone, so it's unlikely that your account was compromised. However, I recommend changing your online banking password and keeping an eye on your account activity to ensure there are no unauthorized transactions. If you have any concerns or notice anything suspicious, please contact us immediately."
+  },
+  {
+    "query": "I got billed twice for the same coffee shop purchase",
+    "ground_truth_id": "transaction_charged_twice",
+    "ground_truth_answer": "Duplicate charges can happen due to merchant processing errors or network timeouts. Steps: (1) Check if one charge shows as 'Pending' \u2014 it may auto-reverse within 7 days. (2) If both are 'Completed', go to Transactions \u2192 [second charge] \u2192 Dispute Transaction and select 'Duplicate charge'. We'll contact the merchant and refund the duplicate.",
+    "predicted_id": "transaction_charged_twice",
+    "retrieval_correct": true,
+    "retrieved_contexts": [
+      "Duplicate charges can happen due to merchant processing errors or network timeouts. Steps: (1) Check if one charge shows as 'Pending' \u2014 it may auto-reverse within 7 days. (2) If both are 'Completed', go to Transactions \u2192 [second charge] \u2192 Dispute Transaction and select 'Duplicate charge'. We'll contact the merchant and refund the duplicate.",
+      "Card payment fees may apply for: (1) Currency conversion (0.5% weekdays, 1% weekends). (2) ATM cash withdrawals beyond your free allowance. (3) Some merchants charge a surcharge for card payments \u2014 this is set by the merchant, not us. Check the fee breakdown in Transactions \u2192 [transaction] \u2192 Fee Details.",
+      "Payment reversals happen when: (1) A merchant cancels or refunds a transaction. (2) A disputed transaction was resolved in your favour. (3) A fraudulent transaction was identified and reversed. The reversed amount returns to your balance within 1\u20133 business days. Check Transactions for details."
+    ],
+    "rag_answer": "Duplicate charges can happen due to merchant processing errors or network timeouts. Steps: (1) Check if one charge shows as 'Pending' \u2014 it may auto-reverse within 7 days. (2) If both are 'Completed', go to Transactions \u2192 [second charge] \u2192 Dispute Transaction and select 'Duplicate charge'. We'll contact the merchant and refund the duplicate.",
+    "llm_answer": "I'd be happy to help you resolve the issue. Can you please provide me with the exact dates and amounts of the two transactions, as well as the merchant name (coffee shop) so I can look into this further and assist you in getting the duplicate charge removed?"
+  }
+]

@@ -89,6 +89,7 @@ $0.001    $0.010     $0.050
 - **Experiment Tracking** — MLflow + DagsHub
 - **CI/CD** — GitHub Actions
 - **Serving** — FastAPI + Docker
+- **RAG Backend** — FAISS (default, in-process) or Qdrant (vector DB, in-memory or remote) — switchable via `RAG_BACKEND` env var, see `serving/backends/`
 - **LLM Fallback** — Groq (llama-3.1-8b-instant) / OpenAI / Ollama / Mock (configurable via env)
 - **Monitoring** — Prometheus (12 custom metrics) + Grafana Cloud (push-based)
 
@@ -112,7 +113,9 @@ $0.001    $0.010     $0.050
 │
 ├── serving/
 │   ├── inference.py                   # FastAPI serving + chatbot UI
-│   ├── rag.py                         # FAISS retrieval module
+│   ├── rag_engine.py                  # RAG engine — SBERT encode + backend delegation
+│   ├── rag.py                         # Backward-compat shim → rag_engine.RAGEngine
+│   ├── backends/                      # Vector backend abstraction (FAISS / Qdrant)
 │   ├── banking_faq.json               # Knowledge base (59 Q&A)
 │   └── static/index.html             # Chatbot frontend
 │
@@ -120,6 +123,11 @@ $0.001    $0.010     $0.050
 │   ├── docker-compose.yml             # Prometheus + Grafana stack
 │   ├── prometheus.yml                 # Scrape config
 │   └── grafana_dashboard_cloud.json   # Dashboard for Grafana Cloud import
+│
+├── evaluation/
+│   ├── generate_dataset.py            # Runs real RAG+LLM pipeline → eval dataset
+│   ├── deepeval_tests/                # DeepEval: faithfulness, relevancy, safety GEval
+│   └── ragas_eval/                    # Ragas: faithfulness, context precision/recall
 │
 └── .github/workflows/
     ├── preprocessing.yml              # Auto-trigger preprocessing
@@ -209,6 +217,21 @@ Response:
 | 10 | `router_model_info` | Gauge | Model Metadata |
 | 11 | `router_prediction_errors_total` | Counter | Error Rate |
 | 12 | `router_throughput_summary` | Summary | Throughput |
+
+---
+
+## Evaluation — DeepEval + Ragas
+
+`evaluation/` measures RAG pipeline quality with an LLM judge (Claude), on a
+dataset generated from the real `serving/rag.py` + `serving/llm_client.py`
+pipeline (not hardcoded examples):
+
+- **Ragas** — faithfulness, context precision/recall for the retrieval tier.
+- **DeepEval** — answer relevancy + faithfulness (pytest-style), plus a
+  custom GEval safety check that catches the ungrounded LLM tier fabricating
+  specific contact details not present in the knowledge base.
+
+See [`evaluation/README.md`](evaluation/README.md) for setup and results.
 
 ---
 

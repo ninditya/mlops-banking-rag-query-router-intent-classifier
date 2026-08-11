@@ -6,7 +6,8 @@ sentence-transformers==5.5.0
 transformers==5.8.1
 tokenizers==0.22.2
 huggingface_hub==1.15.0
-faiss-cpu==1.13.2
+faiss-cpu==1.13.2               # default backend (RAG_BACKEND=faiss, in-process)
+# qdrant-client==1.19.0         # opsional -- pasang manual kalau pakai RAG_BACKEND=qdrant
 fastapi==0.136.1
 uvicorn[standard]==0.47.0
 pydantic==2.13.4
